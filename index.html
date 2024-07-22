@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <section id="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+    </section>
+    <section id="gallery">
+        <div class="photo" data-category="nature"><img src="https://tse2.mm.bing.net/th?id=OIP.G12T_MUuIKWw7XklDIqzhwHaE8&pid=Api&P=0&h=180" alt="Nature 1"></div>
+        <div class="photo" data-category="city"><img src="http://www.pixelstalk.net/wp-content/uploads/2016/05/New-york-city-wallpaper.jpg" alt="City 1"></div>
+        <div class="photo" data-category="animals"><img src="https://tse1.mm.bing.net/th?id=OIP.hl4S7idr2DL7KBW2UchOJgHaE8&pid=Api&P=0&h=180" alt="Animals 1"></div>
+        <div class="photo" data-category="nature"><img src="https://wallpapercave.com/wp/wp3155700.jpg" alt="Nature 2"></div>
+        <div class="photo" data-category="city"><img src="https://cdn.wallpapersafari.com/77/87/EkFsdf.jpg" alt="City 2"></div>
+        <div class="photo" data-category="animals"><img src="https://tse3.mm.bing.net/th?id=OIP.ZaKd2LmCBsHd0032rpaKfAHaEK&pid=Api&P=0&h=180" alt="Animals 2"></div>
+        <div class="photo" data-category="nature"><img src="http://thewowstyle.com/wp-content/uploads/2015/01/nature.jpg" alt="Nature 3"></div>
+        <div class="photo" data-category="city"><img src="https://tse1.mm.bing.net/th?id=OIP.mjvtec5yZGn3e9vhRGay0wHaFj&pid=Api&P=0&h=180" alt="City 3"></div>
+        <div class="photo" data-category="animals"><img src="https://tse1.mm.bing.net/th?id=OIP.IMT0cO18f2wtUM0ugIYQxgHaHa&pid=Api&P=0&h=180" alt="Animals 3"></div>
+    </section>
+
+   
+    <div id="lightbox" class="hidden">
+        <span id="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
